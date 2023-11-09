@@ -1,14 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
+     <title>mi primera web</title>
+     <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    web de prueba
-    <button onclick="clickeado()">Clickeame</button>
+    <table style="width: 500px;">
+       <thead>
+        <tr>
+            <th>producto</th>
+            <th>precio</th>     
+        </tr>
+       </thead>
+        <tr>
+            <td>Vino interia</td>
+            <td>350$</td>
+        </tr>
+        <tr>
+            <td>Vino interia real</td>
+            <td>450$</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td></td>
+        <td>Total:800$</td>
+    </tfoot>
+    </table>
+    <!-- ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <!--ol es lista ordenada-->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>
+            <ol>
+                <li style="list-style-type:decimal">sub elemento</li>
+                <li style="list-style-type:decimal">sub elemento</li>
+                <li style="list-style-type:decimal">sub elemento</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="texto" id="nombre" name="nombre" placeholder="nombre"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="texto" id="apellido" name="apellido" placeholder="apellido"/>
+        <br>
+        <label for="comentario">Comentarios</label>
+        <textarea cols="60" rows="10"  id="comentario" name="comentario" placeholde="ingrese comentario"></textarea>
+        <br>
+        <button type="button">tipo boton</button>
+        <button type="reset">tipo reset</button>
+        <button type="submit">tipo submit</button>
+    </form>
+
+    <h1>mi primera heading</h1>
+    <h2>mi segundo heading</h2>
+    <h3>mi trecer heading</h3>
+    <p>el cielo es azul como el mar pero el agua es trasparente</p>
+    <hr>
+    <h1>hola mundo</h1>
+<p>este texto es <span style="color: blue;">mucho mas largo</span>  y es para mostrar
+ <br>la etiqueta de span!
+    </p>
+    <!--este texto es un cometario -->
+    <a target="_blank" href="https://www.youtube.com">ir a youtube</a>
+    <img src="img/marvel.jpg"width="400"
+    
 </body>
 </html>
